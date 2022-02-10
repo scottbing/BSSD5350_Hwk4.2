@@ -50,14 +50,14 @@ void draw() {
    pushMatrix();
   translate(width*3/5, height);
   rotate(-PI/2);
-  turtle2.render(lsysC.getGeneration());
+  turtle3.render(lsysC.getGeneration());
   growTree(turtle2, lsysC, 0.7);
   popMatrix();
   
    pushMatrix();
   translate(width*4/5, height);
   rotate(-PI/2);
-  turtle2.render(lsysD.getGeneration());
+  turtle4.render(lsysD.getGeneration());
   growTree(turtle4, lsysD, 0.7);
   popMatrix();
   
