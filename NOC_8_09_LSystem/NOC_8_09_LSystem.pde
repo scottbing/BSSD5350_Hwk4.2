@@ -28,15 +28,21 @@ void draw() {
   fill(0);
   //text("Click mouse to generate", 10, height-10);
 
-  translate(width/2, height);
+  
+  pushMatrix();
+  translate(width/5, height);
   rotate(-PI/2);
   turtle1.render(lsysA.getGeneration());
-  //translate(width/3, height);
-  //rotate(-PI/3);
   growTree(turtle1, lsysA, 0.5);
+  popMatrix();
+  
+  pushMatrix();
+  translate(width*2/5, height);
+  rotate(-PI/2);
   turtle2.render(lsysB.getGeneration());
-  //noLoop();
   growTree(turtle2, lsysB, 0.7);
+  popMatrix();
+  //noLoop();
 }
 
 int counter = 0;
