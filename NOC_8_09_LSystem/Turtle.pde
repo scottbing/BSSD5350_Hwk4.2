@@ -14,10 +14,7 @@ class Turtle {
     theta = t;
   } 
 
-  void render(int generation) {
-    float noiseSeed = random(0.1, 0.5);
-    print(noiseSeed);
-    random(noiseSeed);
+  void render(int generation, float noiseSeed) {
     stroke(0, 175);
     for (int i = 0; i < todo.length(); i++) {
       theta += random(-.5, .5 + noiseSeed);
